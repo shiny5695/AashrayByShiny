@@ -11,10 +11,10 @@ export default function Landing() {
               <i className="fas fa-home text-3xl"></i>
             </div>
             
-            <div className="mb-4">
-              <div className="flex items-center justify-center space-x-3">
+            <div className="mb-4 relative flex justify-center">
+              <div className="relative">
                 <h1 className="text-4xl font-medium text-gray-900">स्वागत है आश्रय में</h1>
-                <span className="text-lg text-gray-400">शाइनी द्वारा</span>
+                <span className="absolute -bottom-1 right-0 text-sm text-gray-400">by Shiny</span>
               </div>
             </div>
             
