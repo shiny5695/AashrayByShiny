@@ -18,9 +18,9 @@ export default function Header() {
               <i className="fas fa-home text-2xl"></i>
             </div>
             <div>
-              <div className="relative">
+              <div className="relative pr-12">
                 <h1 className="text-2xl font-medium text-gray-900">आश्रय</h1>
-                <span className="absolute -bottom-0 right-0 text-xs text-gray-400">by Shiny</span>
+                <span className="absolute top-0 -right-12 text-xs text-gray-400">by Shiny</span>
               </div>
               <p className="text-base text-gray-600">आपकी सेवा में</p>
             </div>
