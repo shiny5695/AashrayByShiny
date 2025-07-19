@@ -11,9 +11,12 @@ export default function Landing() {
               <i className="fas fa-home text-3xl"></i>
             </div>
             
-            <h1 className="text-4xl font-medium text-gray-900 mb-4">
-              स्वागत है आश्रय में
-            </h1>
+            <div className="mb-4">
+              <div className="flex items-center justify-center space-x-3">
+                <h1 className="text-4xl font-medium text-gray-900">स्वागत है आश्रय में</h1>
+                <span className="text-lg text-gray-400">शाइनी द्वारा</span>
+              </div>
+            </div>
             
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               सीनियर सिटिजन के लिए विश्वसनीय सेवा प्लेटफॉर्म

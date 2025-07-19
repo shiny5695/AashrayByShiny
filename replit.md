@@ -5,6 +5,7 @@ This is a full-stack web application built for senior citizens in India, providi
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Design attribution: "by Shiny" (शाइनी द्वारा) to be displayed in small font next to आश्रय branding in Marathi/Hindi.
 
 ## System Architecture
 

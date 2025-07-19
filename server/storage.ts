@@ -77,17 +77,21 @@ export class DatabaseStorage implements IStorage {
   }
 
   async getServiceProviders(serviceType?: string, location?: string): Promise<ServiceProvider[]> {
-    let query = db.select().from(serviceProviders).where(eq(serviceProviders.isActive, true));
+    let whereConditions = [eq(serviceProviders.isActive, true)];
     
     if (serviceType) {
-      query = query.where(eq(serviceProviders.serviceType, serviceType));
+      whereConditions.push(eq(serviceProviders.serviceType, serviceType));
     }
     
     if (location) {
-      query = query.where(like(serviceProviders.location, `%${location}%`));
+      whereConditions.push(like(serviceProviders.location, `%${location}%`));
     }
     
-    return await query.orderBy(desc(serviceProviders.rating));
+    return await db
+      .select()
+      .from(serviceProviders)
+      .where(and(...whereConditions))
+      .orderBy(desc(serviceProviders.rating));
   }
 
   async getServiceProviderById(id: number): Promise<ServiceProvider | undefined> {
